@@ -1,6 +1,6 @@
 #!/bin/bash
 #====================================================
-#	SCRIPT: CRIARUSUARIO NET WORLD SSH
+#	SCRIPT: CRIARUSUARIO NZX NET
 #	DESENVOLVIDO POR:	JEFFSSH
 #====================================================
 IP=$(cat /etc/IP)
