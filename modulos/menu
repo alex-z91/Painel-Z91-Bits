@@ -62,10 +62,14 @@ fun_tst () {
 speedtest --share > speed
 }
 echo ""
+aguarde 'fun_tst'
+png=$(cat speed | sed -n '5 p' |awk -F : {'print $NF'})
+down=$(cat speed | sed -n '7 p' |awk -F :  {'print $NF'})
+upl=$(cat speed | sed -n '9 p' |awk -F :  {'print $NF'})
+lnk=$(cat speed | sed -n '10 p' |awk {'print $NF'}) 
 echo -e "\033[1;36m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
-echo -e "\033[1;36m┃                TESTE DE VELOCIDADE DA INTERNE                \033[1;36m┃\E[0m"
+echo -e "\033[1;36m┃                TESTE DE VELOCIDADE DA INTERNET               \033[1;36m┃\E[0m"
 echo -e "\033[1;36m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
-aguarde 'fun_tst' png=$(cat speed | sed -n '5 p' |awk -F : {'print $NF'}) down=$(cat speed | sed -n '7 p' |awk -F :  {'print $NF'}) upl=$(cat speed | sed -n '9 p' |awk -F :  {'print $NF'}) lnk=$(cat speed | sed -n '10 p' |awk {'print $NF'}) 
 echo -e "\033[1;36m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
 echo -e "\033[1;36m┃\033[1;32mPING (LATENCIA):\033[1;37m$png \033[1;36m                                 ┃"
 echo -e "\033[1;36m┃\033[1;32mDOWNLOAD:\033[1;37m$down \033[1;36m                                    ┃"
