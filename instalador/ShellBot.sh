@@ -4,11 +4,10 @@
 #	DATA:				07 de Março de 2017
 #	SCRIPT:				ShellBot.sh
 #	VERSÃO:				6.4.0
-#	DESENVOLVIDO POR:	Juliano Santos [SHAMAN]
-#	PÁGINA:				http://www.shellscriptx.blogspot.com.br
-#	FANPAGE:			https://www.facebook.com/shellscriptx
-#	GITHUB:				https://github.com/shellscriptx
-# 	CONTATO:			shellscriptx@gmail.com
+#	DESENVOLVIDO POR:	Alex Guimarães [ALEX Z91]
+#	YOUTUBE:			https://www.youtube.com/c/AlexZ91
+#	TELEGRAM:			https://t.me/alexzero91
+# 	CONTATO:			https://wa.me/5591991697186
 #
 #	DESCRIÇÃO:			ShellBot é uma API não-oficial desenvolvida para facilitar a criação de 
 #						bots na plataforma TELEGRAM. Constituída por uma coleção de métodos
@@ -20,7 +19,7 @@
 #							* Obter informações sobre membros, arquivos, grupos e canais.
 #							* Para mais informações consulte a documentação:
 #							  
-#							https://github.com/shellscriptx/ShellBot/wiki
+#							https://t.me/alexzero91
 #
 #						O ShellBot mantém o padrão da nomenclatura dos métodos registrados da
 #						API original (Telegram), assim como seus campos e valores. Os métodos
@@ -41,17 +40,16 @@ fi
 
 # Informações
 readonly -A _SHELLBOT_=(
-[name]='ShellBot'
+[name]='Et Steeve Z91'
 [keywords]='Shell Script Telegram API'
 [description]='API não-oficial para criação de bots na plataforma Telegram.'
 [version]='6.4.0'
 [language]='shellscript'
 [shell]=${SHELL}
 [shell_version]=${BASH_VERSION}
-[author]='Juliano Santos [SHAMAN]'
-[email]='shellscriptx@gmail.com'
-[wiki]='https://github.com/shellscriptx/shellbot/wiki'
-[github]='https://github.com/shellscriptx/shellbot'
+[author]='Alex Guimarães [ALEX Z91]'
+[email]='canal.alexz91@gmail.com'
+[telegram]='https://t.me/alexzero91
 [packages]='curl 7.0, getopt 2.0, jq 1.5'
 )
 
