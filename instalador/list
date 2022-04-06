@@ -1,6 +1,6 @@
 #===================================================
-#	SCRIPT: NET VPS-SSH
-#	DESENVOLVIDO POR:	Couty SSH
+#	SCRIPT: Z91 bits
+#	DESENVOLVIDO POR:	Alex Z91
 #===================================================
 _lvk=$(wget -qO- https://raw.githubusercontent.com/Niltonjuniornzx/scriptssh/main//modulos/versao)
 IP=$(wget -qO- ipv4.icanhazip.com)
