@@ -1,9 +1,9 @@
 #!/bin/bash
 #===================================================
-#	SCRIPT: BOT NET WOLRD SSH
+#	SCRIPT: BOT Z91 bits
 #   DATA ATT:   18 de Outubro 2020
-#	DESENVOLVIDO POR:	JEFFSSH
-#   API SHELLBOT:   SHAMAN
+#	DESENVOLVIDO POR:	ALEX Z91
+#   API SHELLBOT:   Alexzero91
 #===================================================
 [[ ! -d /etc/SSHPlus ]] && exit 0
 [[ ! -d /etc/bot ]] && exit 0
@@ -21,7 +21,7 @@ fun_menu() {
     [[ "${message_from_id[$id]}" == "$id_admin" ]] && {
         local env_msg
         env_msg="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n"
-        env_msg+="<b>BEM VINDO(a) AO BOT NZX NET</b>\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT Z91 BITS</b>\n"
         env_msg+="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n\n"
         env_msg+="⚠️ <i>SELECIONE UMA OPCAO ABAIXO !</i>\n\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} --text "$env_msg" \
@@ -37,7 +37,7 @@ fun_menu() {
     if [[ "$(grep -w "${message_from_username}" $ativos | grep -wc 'revenda')" != '0' ]]; then
         local env_msg
         env_msg="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n"
-        env_msg+="<b>BEM VINDO(a) AO BOT NZX NET</b>\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT Z91 BITS</b>\n"
         env_msg+="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n\n"
         env_msg+="⚠️ <i>SELECIONE UMA OPCAO ABAIXO !</i>\n\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} --text "$env_msg" \
@@ -47,7 +47,7 @@ fun_menu() {
     elif [[ "$(grep -w "${message_from_username}" $ativos | grep -wc 'subrevenda')" != '0' ]]; then
         local env_msg
         env_msg="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n"
-        env_msg+="<b>BEM VINDO(a) AO BOT NZX NET</b>\n"
+        env_msg+="<b>BEM VINDO(a) AO Z91 BITS</b>\n"
         env_msg+="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n\n"
         env_msg+="⚠️ <i>SELECIONE UMA OPCAO ABAIXO !</i>\n\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} --text "$env_msg" \
@@ -72,7 +72,7 @@ fun_ajuda() {
     if [[ "$id_chatuser" = "$id_admin" ]]; then
         local env_msg
         env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>BEM VINDO(a) AO BOT NZX NET</b>\n"
+        env_msg+="<b>BEM VINDO(a) AO Z91 BITS</b>\n"
         env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
         env_msg+="⚠️ <i>Comandos Disponiveis</i>\n\n"
         env_msg+="[<b>01</b>] /menu = Exibe menu\n"
@@ -108,7 +108,7 @@ fun_ajuda() {
     elif [[ "$(grep -w "$id_name" $ativos | awk '{print $NF}')" == 'revenda' ]]; then
         local env_msg
         env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>BEM VINDO(a) AO BOT NZX NET</b>\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT Z91 BITS</b>\n"
         env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
         env_msg+="⚠️ <i>Comandos Disponiveis</i>\n\n"
         env_msg+="[<b>01</b>] /menu = Exibe menu\n"
@@ -134,7 +134,7 @@ fun_ajuda() {
     elif [[ "$(grep -w "$id_name" $ativos | awk '{print $NF}')" == 'subrevenda' ]]; then
         local env_msg
         env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>BEM VINDO(a) AO BOT NZX NET</b>\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT Z91 BITS</b>\n"
         env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
         env_msg+="⚠️ <i>Comandos Disponiveis</i>\n\n"
         env_msg+="[<b>01</b>] /menu = Exibe menu\n"
